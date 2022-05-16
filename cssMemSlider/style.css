@@ -17,6 +17,12 @@ body {
     margin: 1rem auto 0;
     position: relative;
     width: 7rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .slider {
@@ -62,16 +68,15 @@ body {
 }
 
 .wrapper .controls {
-    right: 0;
-    position: absolute;
-    bottom: -0.55rem;
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
 }
 
 .wrapper .text {
-    position: absolute;
-    font-size: 0.16rem;
-    left: 0;
-    bottom: -.35rem;
+    display: flex;
+    flex: auto;
+    line-height: 0.3rem;
 }
 
 
@@ -115,7 +120,7 @@ body {
     cursor: pointer;
     display: inline-block;
     height: .08rem;
-    margin: .25rem .12rem 0 .16rem;
+    margin: 0.1rem 0.04rem 0 0.16rem;
     position: relative;
     width: .08rem;
     border-radius: 50%;
