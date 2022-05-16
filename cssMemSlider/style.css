@@ -80,7 +80,11 @@ body {
 }
 
 
-.wrapper label:hover,
+.wrapper label:hover {
+    background: #dc20c6;
+}
+
+
 #slide1:checked ~ .controls label:nth-of-type(1),
 #slide2:checked ~ .controls label:nth-of-type(2),
 #slide3:checked ~ .controls label:nth-of-type(3),
@@ -104,27 +108,16 @@ body {
     transition: color 2s, font-size 2s;
 }
 
-.wrapper label:after {
-    border: .02rem solid #ddd;
-    content: " ";
-    display: block;
-    height: .12rem;
-    left: -.04rem;
-    position: absolute;
-    top: -.04rem;
-    width: .12rem;
-    border-radius: 50%;
-}
-
 .wrapper label {
     cursor: pointer;
     display: inline-block;
-    height: .08rem;
+    height: .1rem;
     margin: 0.1rem 0.04rem 0 0.16rem;
     position: relative;
-    width: .08rem;
+    width: .1rem;
     border-radius: 50%;
     transition: background ease-in-out .5s;
+    border: .02rem solid #ddd;
 }
 
 /*медиа запрос для устройств с шириной экрана меньше 768px*/
