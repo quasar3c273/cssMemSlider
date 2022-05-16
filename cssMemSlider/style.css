@@ -115,3 +115,84 @@ body {
     border-radius: 50%;
     transition: background ease-in-out .5s;
 }
+
+/*медиа запрос для устройств с шириной экрана меньше 768px*/
+@media (max-width: 767px) {
+    .wrapper {
+        height: 500px;
+        width: 500px;
+        margin: 20px auto 0;
+    }
+
+    .slider {
+        width: 500px;
+    }
+
+    .wrapper label {
+        margin: 20px 12px 2px 16px;
+    }
+
+    .wrapper .controls {
+        left: 0;
+        bottom: -35px;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    .wrapper .text {
+        left: 0;
+        bottom: -60px;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .wrapper {
+        height: 430px;
+        width: 430px;
+        margin: 20px auto 0;
+    }
+
+    .slider {
+        width: 430px;
+    }
+
+    .wrapper label {
+        margin: 20px 12px 2px 16px;
+    }
+}
+
+@media (max-width: 450px) {
+    .wrapper {
+        height: 400px;
+        width: 400px;
+        margin: 20px auto 0;
+    }
+
+    .slider {
+        width: 400px;
+    }
+
+    .wrapper label {
+        margin: 20px 12px 2px 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        height: 300px;
+        width: 300px;
+        margin: 20px auto 0;
+    }
+
+    .slider {
+        width: 300px;
+    }
+
+    .wrapper label {
+        margin: 20px 12px 2px 16px;
+    }
+}
