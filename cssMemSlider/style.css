@@ -1,3 +1,7 @@
+html {
+    font-size: 100px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,17 +13,17 @@ body {
 }
 
 .wrapper {
-    height: 700px;
-    margin: 100px auto 0;
+    height: 7rem;
+    margin: 1rem auto 0;
     position: relative;
-    width: 700px;
+    width: 7rem;
 }
 
 .slider {
     height: inherit;
     overflow: hidden;
     position: relative;
-    width: 700px;
+    width: 7rem;
     margin: auto;
 }
 
@@ -60,13 +64,14 @@ body {
 .wrapper .controls {
     right: 0;
     position: absolute;
-    bottom: -35px;
+    bottom: -0.55rem;
 }
 
 .wrapper .text {
     position: absolute;
+    font-size: 0.16rem;
     left: 0;
-    bottom: -35px;
+    bottom: -.35rem;
 }
 
 
@@ -84,34 +89,35 @@ body {
 #slide3:checked ~ .text p:nth-of-type(3),
 #slide4:checked ~ .text p:nth-of-type(4),
 #slide5:checked ~ .text p:nth-of-type(5) {
-   display: block;
     color: #fff;
+    font-size: .16rem;
 }
 
 .text p {
-    display: none;
+    font-size: 0;
+    color: rgba(0,0,0,0);
+    transition: color 2s, font-size 2s;
 }
 
 .wrapper label:after {
-    border: 2px solid #ddd;
+    border: .02rem solid #ddd;
     content: " ";
     display: block;
-    height: 12px;
-    left: -4px;
+    height: .12rem;
+    left: -.04rem;
     position: absolute;
-    top: -4px;
-    width: 12px;
+    top: -.04rem;
+    width: .12rem;
     border-radius: 50%;
 }
 
 .wrapper label {
     cursor: pointer;
     display: inline-block;
-    height: 8px;
-    margin: 25px 12px 0 16px;
-    /*padding: 20px;*/
+    height: .08rem;
+    margin: .25rem .12rem 0 .16rem;
     position: relative;
-    width: 8px;
+    width: .08rem;
     border-radius: 50%;
     transition: background ease-in-out .5s;
 }
@@ -119,80 +125,67 @@ body {
 /*медиа запрос для устройств с шириной экрана меньше 768px*/
 @media (max-width: 767px) {
     .wrapper {
-        height: 500px;
-        width: 500px;
-        margin: 20px auto 0;
+        height: 5rem;
+        width: 5rem;
+        margin: .20rem auto 0;
     }
 
     .slider {
-        width: 500px;
+        width: 5rem;
     }
 
     .wrapper label {
-        margin: 20px 12px 2px 16px;
+        margin: .20rem .12rem .02rem .16rem;
     }
 
     .wrapper .controls {
-        left: 0;
-        bottom: -35px;
-        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        text-align: center;
     }
 
     .wrapper .text {
-        left: 0;
-        bottom: -65px;
-        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        text-align: center;
+        line-height: .2rem;
     }
 }
 
 @media (max-width: 520px) {
     .wrapper {
-        height: 430px;
-        width: 430px;
-        margin: 20px auto 0;
+        height: 4.3rem;
+        width: 4.3rem;
+        margin: 0.2rem auto 0;
     }
 
     .slider {
-        width: 430px;
-    }
-
-    .wrapper label {
-        margin: 20px 12px 2px 16px;
+        width: 4.3rem;
     }
 }
 
 @media (max-width: 450px) {
     .wrapper {
-        height: 400px;
-        width: 400px;
-        margin: 20px auto 0;
+        height: 4rem;
+        width: 4rem;
+        margin: 0.2rem auto 0;
     }
 
     .slider {
-        width: 400px;
-    }
-
-    .wrapper label {
-        margin: 20px 12px 2px 16px;
+        width: 4rem;
     }
 }
 
 @media (max-width: 400px) {
     .wrapper {
-        height: 300px;
-        width: 300px;
-        margin: 20px auto 0;
+        height: 3rem;
+        width: 3rem;
+        margin: 0.2rem auto 0;
     }
 
     .slider {
-        width: 300px;
-    }
-
-    .wrapper label {
-        margin: 20px 12px 2px 16px;
+        width: 3rem;
     }
 }
